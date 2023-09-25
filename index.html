@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bawandar</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="main-heading">Bawandar</h1>
+
+        <div class="tab-container">
+           <p class="tab" data-user-weather> Your Weather</p>
+           <p class="tab" search-weather > Search Weather</p>
+        </div>
+        
+        <div class="weather-container">
+            <div class="sub-container grant-location-container">
+                <img src="./assets/locationlogo.png" alt="GeoTag" width="80" height="80" loading="lazy" >
+                <p>Grant Location Access</p>
+                <p>Allow location acces to get Weather information</p>
+                    <button class="btn" data-grant-access>Grant Access</button>
+            </div>
+            <!--search bar -->
+            <form class="form-container" data-searchForm>
+                <input placeholder="Search City" data-searchInput>
+                <button class="btn" type="submit"><img src="./assets/searchlogo.png" alt="Search Here" width="20" height="20" loading="lazy"></button>
+            </form>
+            <!-- loading screen -->
+            <div class="sub-container loading-continer">
+                <img src="./assets/loading.gif" alt="Loading....." width="150" height="150">
+                <p>Loading....</p>
+           </div>
+            <!-- weather data division -->
+           
+            <div class="user-info-container sub-container">
+                <!-- city name and flag -->
+                    <div class="name">
+                      <p data-cityName> </p>
+                      <img data-country-icon>  
+                    </div>
+                    <!-- weather description -->
+                    <p data-weatherDescription> </p>
+                    <!-- weather icon -->
+                    <img data-weatherIcon>
+                    <!-- temperature value -->
+                    <p data-temperature></p>
+                    <!-- cards of weather -->
+                    <div class="parameter-container">
+                            <div class="parameter">
+                                <img src="./assets/windlogo.png" alt="wind-icon">
+                                <p>Windspeed</p>
+                                <p data-windspeed></p>
+                            </div>
+                            <div class="parameter">
+                                <img src="./assets/humiditylogo.png" alt="humidity">
+                                <p> Humidity</p>
+                                <p data-humidity></p>
+                            </div>
+                            <div class="parameter">
+                                <img src="./assets/cloudslogo.jpeg" alt="clouds">
+                                <p>Clouds</p>
+                                <p data-cloudiness></p>
+                            </div>
+                
+            </div>
+
+            
+        </div>
+<footer class="foot">
+<div class="love">
+    <pre>
+    Made With 💟 
+    Made in 🇮🇳 
+    </pre>
+</div>
+<div>
+    <div class="social">
+       <span> Connect with me 🌐 </span>
+       <a href="https://www.linkedin.com/in/gauravbisht231/">LinkedIn</a>
+       <a href="https://github.com/Gauravbisht231">Github</a>
+    </div>
+
+</div>
+    
+</footer>
+
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
